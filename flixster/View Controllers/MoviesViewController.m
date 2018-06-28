@@ -52,15 +52,12 @@
         else {
             NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
             NSLog(@"%@", dataDictionary);
-            // TODO: Get the array of movies
             
             self.movies = dataDictionary[@"results"];
             for (NSDictionary *movie in self.movies)
             {
                 NSLog(@"%@", movie[@"title"]);
             }
-            // TODO: Store the movies in a property to use elsewhere
-            // TODO: Reload your table view data
             [self.tableView reloadData];
         }
         [self.refreshControl endRefreshing];
@@ -71,7 +68,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
