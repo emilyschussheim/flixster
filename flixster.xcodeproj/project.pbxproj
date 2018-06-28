@@ -159,8 +159,6 @@
 				F34129E220E409AB00377035 /* AppDelegate.m */,
 				F34129E120E409AB00377035 /* AppDelegate.h */,
 				F34129E720E409AB00377035 /* Main.storyboard */,
-				F3412A1D20E4B3EC00377035 /* DetailsViewController.h */,
-				F3412A1E20E4B3EC00377035 /* DetailsViewController.m */,
 				F34129EA20E409AB00377035 /* Assets.xcassets */,
 				F34129EC20E409AB00377035 /* LaunchScreen.storyboard */,
 				F34129EF20E409AB00377035 /* Info.plist */,
@@ -190,6 +188,8 @@
 		F3412A1620E4123D00377035 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F3412A1E20E4B3EC00377035 /* DetailsViewController.m */,
+				F3412A1D20E4B3EC00377035 /* DetailsViewController.h */,
 				F3412A1320E40FDA00377035 /* MoviesViewController.h */,
 				F3412A1420E40FDA00377035 /* MoviesViewController.m */,
 				F3412A2020E5549B00377035 /* MoviesGridViewController.h */,

@@ -22,9 +22,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="cFf-iQ-047">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="162" id="Deb-Pn-0kh" customClass="MovieCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="162"/>
+                                        <rect key="frame" x="0.0" y="84" width="375" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Deb-Pn-0kh" id="04p-88-bSx">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
@@ -72,6 +77,7 @@
                     <navigationItem key="navigationItem" title="Movies" id="GH4-zr-BIo"/>
                     <connections>
                         <outlet property="activityIndicator" destination="oNa-2P-Yld" id="F99-Tu-Fuj"/>
+                        <outlet property="searchBar" destination="cFf-iQ-047" id="dzO-Aa-CFl"/>
                         <outlet property="tableView" destination="9lK-dl-x5u" id="lgX-Ch-kin"/>
                     </connections>
                 </viewController>
@@ -242,6 +248,6 @@
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SKm-FG-RmN"/>
+        <segue reference="bIW-oZ-oUt"/>
     </inferredMetricsTieBreakers>
 </document>
