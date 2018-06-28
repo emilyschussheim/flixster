@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailsViewController.h
 //  flixster
 //
 //  Created by Emily Schussheim on 6/27/18.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DetailsViewController : UIViewController
 
+@property (nonatomic, strong) NSDictionary *movie;
 
 @end
-
