@@ -12,9 +12,10 @@
 #import "DetailsViewController.h"
 
 @interface MoviesViewController () <UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @property (nonatomic, strong) NSArray *movies;
 
@@ -81,6 +82,7 @@
                 NSLog(@"%@", movie[@"title"]);
             }
             [self.tableView reloadData];
+            [self.activityIndicator stopAnimating];
         }
         [self.refreshControl endRefreshing];
     }];
