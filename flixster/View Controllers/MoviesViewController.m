@@ -12,6 +12,7 @@
 #import "DetailsViewController.h"
 
 @interface MoviesViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -40,6 +41,12 @@
     
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [self.activityIndicator startAnimating];
+    NSLog(@"***view did appear***");
+}
+
 - (void)fetchMovies {
     
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"];
@@ -48,6 +55,21 @@
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error != nil) {
             NSLog(@"%@", [error localizedDescription]);
+            
+            //making an alert appear
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Network Error" message:@"Movies Cannot Load" preferredStyle:(UIAlertControllerStyleAlert)];
+            
+            // create a cancel action
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) { }];
+            [alert addAction:cancelAction];
+            
+            [self presentViewController:alert animated:YES completion:^{
+                // optional code for what happens after the alert controller has finished presenting
+            }];
+            
+            
+            
+            
         }
         else {
             NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];

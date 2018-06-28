@@ -60,6 +60,11 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oNa-2P-Yld">
+                                <rect key="frame" x="170" y="316" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -146,7 +151,7 @@
         <scene sceneID="EYC-HX-75h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CUy-Zc-Idu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Now Playing" id="C15-U8-48a"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="C15-U8-48a"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cFh-c3-GqZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -161,11 +166,11 @@
             </objects>
             <point key="canvasLocation" x="-374" y="197"/>
         </scene>
-        <!--Item-->
+        <!--Superhero Movies-->
         <scene sceneID="9wc-ER-RCD">
             <objects>
                 <navigationController id="EAD-Mn-hgd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mPZ-SC-rlO"/>
+                    <tabBarItem key="tabBarItem" title="Superhero Movies" image="superhero_tabbar_item" id="mPZ-SC-rlO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="utA-VQ-wpl">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -230,4 +235,8 @@
             <point key="canvasLocation" x="960.79999999999995" y="1133.8830584707648"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="superhero_tabbar_item" width="21" height="23"/>
+    </resources>
 </document>
