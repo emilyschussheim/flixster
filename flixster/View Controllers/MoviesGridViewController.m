@@ -8,6 +8,7 @@
 
 #import "MoviesGridViewController.h"
 #import "MovieCollectionViewCell.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface MoviesGridViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -22,6 +23,8 @@
     [super viewDidLoad];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
+    
+    [self fetchMovies];
 }
 
 - (void)didReceiveMemoryWarning {
