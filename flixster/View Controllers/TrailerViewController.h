@@ -10,6 +10,6 @@
 
 @interface TrailerViewController : UIViewController
 
-@property (nonatomic, strong) NSDictionary *movie;
+@property (nonatomic, strong) NSString *videoUrl;
 
 @end

@@ -23,6 +23,7 @@
 		F3412A2220E5549B00377035 /* MoviesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3412A2120E5549B00377035 /* MoviesGridViewController.m */; };
 		F3412A2520E5576D00377035 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3412A2420E5576D00377035 /* MovieCollectionViewCell.m */; };
 		F3412A2820E5AE4400377035 /* TrailerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3412A2720E5AE4400377035 /* TrailerViewController.m */; };
+		F3412A2A20E6E0CD00377035 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3412A2920E6E0CD00377035 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		F3412A2420E5576D00377035 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
 		F3412A2620E5AE4400377035 /* TrailerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailerViewController.h; sourceTree = "<group>"; };
 		F3412A2720E5AE4400377035 /* TrailerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailerViewController.m; sourceTree = "<group>"; };
+		F3412A2920E6E0CD00377035 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3412A2A20E6E0CD00377035 /* WebKit.framework in Frameworks */,
 				8645DE34AD01B62D89863365 /* libPods-flixster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +114,7 @@
 		20EBC53627A4202EB276AA08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3412A2920E6E0CD00377035 /* WebKit.framework */,
 				182679411CD626A4FC8C95C4 /* libPods-flixster.a */,
 				A5656AB472A927656B91F12F /* libPods-flixsterTests.a */,
 				529420B9044C61A6ABB52360 /* libPods-flixsterUITests.a */,
