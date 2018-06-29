@@ -29,9 +29,11 @@ The following **additional** features are implemented:
 
 - [X] List anything else that you can get done to improve the app functionality!
 
-  [X] User sees a loading wheel while the movies load on the main tableview
-  [X] User can see a description of a selected movie after clicking on it from the tableview OR the collection view
-  [X] User can click on a "trailer" button in a movie's description to see a trailer of the movie
+- [X] User sees a loading wheel while the movies load on the main tableview
+  
+- [X] User can see a description of a selected movie after clicking on it from the tableview OR the collection view
+  
+- [X] User can click on a "trailer" button in a movie's description to see a trailer of the movie
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
