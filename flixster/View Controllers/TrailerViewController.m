@@ -9,6 +9,8 @@
 #import "TrailerViewController.h"
 
 @interface TrailerViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *webVIew;
+@property (weak, nonatomic) IBOutlet UILabel *movieLabel;
 
 @end
 
@@ -16,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.movieLabel.text = self.movie[@"title"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

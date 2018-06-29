@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *posterView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
+@property (weak, nonatomic) IBOutlet UIButton *trailerButton;
 
 @end
 
@@ -52,12 +53,11 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    UIImageView *tappedImage = sender;
-    //NSIndexPath *indexPath = [self.tableView indexPathForCell:tappedCell];
-    //NSDictionary *movie = self.movies[indexPath.row];
+    //UIImageView *tappedImage = sender;
+    NSDictionary *movie = self.movie;
     
     TrailerViewController *trailerViewController = [segue destinationViewController];
-    //detailsViewController.movie = movie;
+    trailerViewController.movie = movie;
     
 }
 
