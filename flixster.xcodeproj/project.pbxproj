@@ -22,6 +22,7 @@
 		F3412A1F20E4B3EC00377035 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3412A1E20E4B3EC00377035 /* DetailsViewController.m */; };
 		F3412A2220E5549B00377035 /* MoviesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3412A2120E5549B00377035 /* MoviesGridViewController.m */; };
 		F3412A2520E5576D00377035 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3412A2420E5576D00377035 /* MovieCollectionViewCell.m */; };
+		F3412A2820E5AE4400377035 /* TrailerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3412A2720E5AE4400377035 /* TrailerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		F3412A2120E5549B00377035 /* MoviesGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesGridViewController.m; sourceTree = "<group>"; };
 		F3412A2320E5576D00377035 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		F3412A2420E5576D00377035 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		F3412A2620E5AE4400377035 /* TrailerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailerViewController.h; sourceTree = "<group>"; };
+		F3412A2720E5AE4400377035 /* TrailerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				F3412A1E20E4B3EC00377035 /* DetailsViewController.m */,
+				F3412A2620E5AE4400377035 /* TrailerViewController.h */,
+				F3412A2720E5AE4400377035 /* TrailerViewController.m */,
 				F3412A1D20E4B3EC00377035 /* DetailsViewController.h */,
 				F3412A1320E40FDA00377035 /* MoviesViewController.h */,
 				F3412A1420E40FDA00377035 /* MoviesViewController.m */,
@@ -410,6 +415,7 @@
 				F3412A1F20E4B3EC00377035 /* DetailsViewController.m in Sources */,
 				F34129E320E409AB00377035 /* AppDelegate.m in Sources */,
 				F3412A1C20E4A91200377035 /* MovieCell.m in Sources */,
+				F3412A2820E5AE4400377035 /* TrailerViewController.m in Sources */,
 				F3412A1520E40FDA00377035 /* MoviesViewController.m in Sources */,
 				F3412A2220E5549B00377035 /* MoviesGridViewController.m in Sources */,
 				F3412A2520E5576D00377035 /* MovieCollectionViewCell.m in Sources */,

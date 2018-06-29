@@ -60,7 +60,7 @@
                                             <outlet property="posterView" destination="WOb-wF-hNz" id="Jus-R1-euW"/>
                                             <outlet property="synopsisLabel" destination="qRe-ue-MQT" id="JYI-uU-buE"/>
                                             <outlet property="titleLabel" destination="aWK-BM-Bg0" id="7v1-8L-eds"/>
-                                            <segue destination="Q2u-La-Zjl" kind="show" id="bIW-oZ-oUt"/>
+                                            <segue destination="Q2u-La-Zjl" kind="show" id="0zx-RR-exH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -72,6 +72,7 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="GH4-zr-BIo"/>
@@ -135,6 +136,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFe-3x-Eyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70" y="1945"/>
+        </scene>
+        <!--Trailer View Controller-->
+        <scene sceneID="rJI-Uf-Iz7">
+            <objects>
+                <viewController id="F1d-3r-Zf5" customClass="TrailerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xOn-JH-DIm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uB1-Ag-dFK">
+                                <rect key="frame" x="67" y="230" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="w36-bD-ewG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNi-Ic-Vhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="2696"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8xu-GT-Yjc">
@@ -240,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNi-vE-HCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960.79999999999995" y="1133.8830584707648"/>
+            <point key="canvasLocation" x="863" y="967"/>
         </scene>
     </scenes>
     <resources>
@@ -248,6 +271,6 @@
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bIW-oZ-oUt"/>
+        <segue reference="0zx-RR-exH"/>
     </inferredMetricsTieBreakers>
 </document>

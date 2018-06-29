@@ -24,6 +24,10 @@
 
 @implementation MoviesViewController
 
+- (IBAction)onTap:(id)sender {
+    [self.view endEditing:YES];
+ }
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -130,24 +134,16 @@
         
         NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(NSDictionary *evaluatedObject, NSDictionary *bindings) {
             return [evaluatedObject[@"title"] containsString:searchText];
-            
-            //movie[@"title"];
         }];
-        
-        
-        
+      
         //NSLog(@"Movies: %@",self.movies);
-        
         self.filteredMovies = [self.movies filteredArrayUsingPredicate:predicate];
         
-        
         //NSLog(@"%@", self.filteredMovies);
-        
     }
     else {
         self.filteredMovies = self.movies;
     }
-    
     [self.tableView reloadData];
     
 }
